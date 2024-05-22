@@ -41,6 +41,8 @@ dependencies:
   intl: any
   provider: ^6.1.2
   shared_preferences: ^2.2.3
+  http: ^1.1.0
+  audioplayers: ^5.2.1
 
 dev_dependencies:
   flutter_test:
