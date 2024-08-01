@@ -30,8 +30,8 @@ class RadioItem extends StatelessWidget{
               //     icon: Icon(
               //         Icons.skip_previous_rounded,
               //     color: Theme.of(context).primaryColor,size: 50)),
-              // const SizedBox(
-              //     width: 20),
+              const SizedBox(
+                  width: 20),
               IconButton(onPressed: ()async{
                 await audioPlayer.play(UrlSource(radioModel.url??""));
               },
@@ -40,8 +40,8 @@ class RadioItem extends StatelessWidget{
                   color: Theme.of(context).primaryColor,size: 50)),
               const SizedBox(
                   width: 20),
-              IconButton(onPressed: (){
-                audioPlayer.stop();
+              IconButton(onPressed: ()async{
+                     await  audioPlayer.stop();
               },
                   icon: Icon(
                       Icons.pause,

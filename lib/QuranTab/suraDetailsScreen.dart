@@ -35,7 +35,8 @@ class _suraDetailsScreenState extends State<suraDetailsScreen> {
             fit: BoxFit.cover) :
         Image.asset('assets/images/light background.png',
         width: double.infinity,
-        height: double.infinity,),
+        height: double.infinity,
+        fit : BoxFit.cover),
         Scaffold(
           appBar: AppBar(
             title: Text(args.suraName,
